@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2028568609877137507}
   - component: {fileID: 5349381428482590689}
   - component: {fileID: 1092213938467486796}
-  - component: {fileID: -2855832945934525408}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Suelo
@@ -99,17 +98,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &-2855832945934525408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 800037733437955011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 497b3acfb924dfa4d9bd01f80763fe1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flotantePublico: 0.1
-  flotantePrivadoSerializeField: 0.1

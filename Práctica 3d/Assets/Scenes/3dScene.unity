@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931169305034020206, guid: ba60042cb8ba64148bc8d11e10c566d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.95
+      value: 3.119
       objectReference: {fileID: 0}
     - target: {fileID: 5931169305034020206, guid: ba60042cb8ba64148bc8d11e10c566d1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -404,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5931169305034020206, guid: ba60042cb8ba64148bc8d11e10c566d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.3807535
+      value: -3.68
       objectReference: {fileID: 0}
     - target: {fileID: 5931169305034020206, guid: ba60042cb8ba64148bc8d11e10c566d1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1212,7 +1212,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2

@@ -128,5 +128,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497b3acfb924dfa4d9bd01f80763fe1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flotantePublico: 0.1
-  flotantePrivadoSerializeField: 0.1
+  flotantePublico: 0.05
+  flotantePrivadoSerializeField: 0.05

@@ -8,6 +8,14 @@ public class HelloWorld : MonoBehaviour
     private float flotantePrivado = 0.1f;
     [SerializeField] private float flotantePrivadoSerializeField = 0.1f;
     private bool isWorking = true;
+    private Rigidbody rb;
+    
+
+    // Metodo que se ejecuta antes de iniciar el juego
+    void Awake() 
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
 
     // Start is called before the first frame update
@@ -20,6 +28,14 @@ public class HelloWorld : MonoBehaviour
     void Update()
     {
         Debug.Log("Hola Mundo muchas veces");
+        CrearRayCast();
+    }
+
+    // Este es un metodo que trabaja con las fisicas de unity
+    void FixedUpdate()
+    {
+        AgregarUnaFuerza();
+
     }
 
 
@@ -80,5 +96,21 @@ public class HelloWorld : MonoBehaviour
         if (other.gameObject.CompareTag("Suelo")) {
             Debug.Log("Deje de hacer la colision con el trigger");
         }
+    }
+
+    public void AgregarUnaFuerza() 
+    {
+        if (Input.GetKey(KeyCode.Space)) 
+        {
+            // Agregamos una fuerza al RigidBody
+            rb.AddForce(new Vector3(0,100,0), ForceMode.Force);
+        }
+    }
+
+    public void CrearRayCast()
+    {
+        RaycastHit hit;
+        Ray ray = new Ray (transform.position, Vector3.down);
+        Debug.DrawRay(transform.position, Vector3.down);
     }
 }
